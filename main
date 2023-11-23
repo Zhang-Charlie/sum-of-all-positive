@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    int input, sum = 0;
+    int i;
+    
+    printf("Enter an intger:\n");
+    scanf("%d", &input);
+    
+    if(input > 0){ // if input is greater than 0
+        for (i = 1; i <= input; i += 2)     // 1 <= 5 , 1 += 2  // 3 <= 5 , 3 += 2  // 5 <= 5 , 5 += 2  // 7 <= 5 Stops here 
+        {
+            sum += i;                       // Sum += 1 // Sum += 3 // Sum += 5 ==== 9
+        }
+        printf("The sum is: %d\n ", sum);
+    }
+    else{
+        printf("Invalid input");
+    }
+
+    return 0;
+}
